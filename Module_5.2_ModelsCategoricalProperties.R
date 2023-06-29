@@ -90,7 +90,7 @@ legend<- legend[,c(2,1)]
 write.csv(legend, "./Outputs/Map Legend.csv")
 
 # Generate Hardened Map
-GGroup<- writeRaster(predict(object= Covariates, 
+GGroup <- writeRaster(predict(object= Covariates, 
                              model=RF,
                              na.rm=TRUE), 
                      filename="Outputs/LFV_Great_Group.tif", 
